@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np  
 import streamlit as st
 from PIL import Image
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 
 st.set_page_config(layout= 'centered', page_title= 'TALENTO TECH', page_icon= ':smile:')
 
@@ -53,6 +53,7 @@ with steps[0]:
         st.pyplot(fig)
 
 #pestaña 2
+"""
 with steps[1]:
     if st.button('Boton 1', key='Boton 1'):
         st.session_state['Boton 1_presionado']= True
@@ -67,7 +68,7 @@ with steps[1]:
     varx=st.selectbox('Escoja la variable x', df.columns)
     ax=sns.histplot(data=df, x=varx)
     st.pyplot(fig)
-
+"""
 
 #pestaña 3
 with steps[2]:
